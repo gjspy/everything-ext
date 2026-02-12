@@ -19,7 +19,7 @@
 	],
 
 	"host_permissions": [
-		"*://music.youtube.com/*"
+		"*://*.nowtv.com/*"
 	],
 
 	"permissions": [

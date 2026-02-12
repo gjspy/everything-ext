@@ -13,8 +13,7 @@
 		{
 			"matches": ["*://*.nowtv.com/*"],
 			"js": ["contentScript.js"],
-			"world": "MAIN",
-			"run_at": "document_idle"
+			"world": "MAIN"
 		}
 	],
 

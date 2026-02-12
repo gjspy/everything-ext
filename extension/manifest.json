@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "EverythingExt",
-	"version": "1.1.12",
+	"version": "1.1.13",
 
 	"description": "Provides additional features to many sites.",
 
@@ -13,8 +13,7 @@
 		{
 			"matches": ["*://*.nowtv.com/*"],
 			"js": ["contentScript.js"],
-			"world": "MAIN",
-			"run_at": "document_idle"
+			"world": "MAIN"
 		}
 	],
 

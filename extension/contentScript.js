@@ -1,4 +1,4 @@
-setTimeout(() => {
+setInterval(() => {
 	let v = document.querySelector("video");
 	console.log("EExt", v);
 	v.preservesPitch = false;

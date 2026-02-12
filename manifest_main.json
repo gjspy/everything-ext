@@ -1,0 +1,48 @@
+{
+	"manifest_version": 3,
+	"name": "EverythingExt",
+	"version": "1.1.11",
+
+	"description": "Provides additional features to many sites.",
+
+	"icons": {
+		"100": "icons/100.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.nowtv.com/*"],
+			"js": ["contentScript.js"],
+			"world": "MAIN",
+			"run_at": "document_idle"
+		}
+	],
+
+	"host_permissions": [
+		"*://music.youtube.com/*"
+	],
+
+	"permissions": [
+		"tabs",
+		"storage",
+		"activeTab",
+		"unlimitedStorage",
+		"scripting",
+		"theme",
+		"menus"
+	],
+
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "evertythingext@ultra",
+			"strict_min_version": "42.0",
+			"update_url": "https://gjspy.github.io/everything-ext/updates.json"
+		}
+	},
+
+	"action": {
+		"default_icon": "icons/100.png",
+		"default_title": "EverythingExt",
+		"default_popup": "popup/index.html"
+	}
+}
